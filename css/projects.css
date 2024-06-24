@@ -1,0 +1,88 @@
+:root {
+   --bg-color: #1f1f21;
+   --text-color: #fff;
+   --main-color: #ff681f;
+
+   --big-font: 5rem;
+   --p-font: 1.1rem
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Rubik", sans-serif;
+   background: var(--bg-color);
+   color: var(--text-color);
+   overflow-x: hidden;
+}
+
+/***** NAVIGATION *****/
+nav {
+   display: flex;
+   justify-content: space-between;
+   position: fixed;
+   top: 0;
+   right: 0;
+   width: 100%;
+   z-index: 1000;
+   align-items: center;
+   background: var(--bg-color);
+   transition: all ease .45s;
+   padding: 0 9%;
+}
+
+nav img {
+   width: 65%;
+}
+
+nav ul {
+   list-style: none;
+   display: flex;
+   padding: 1rem;
+}
+
+nav ul li {
+   padding: 1rem;
+}
+
+nav ul a {
+   font-size: var(--p-font);
+   font-weight: 500;
+   color: var(--text-color);
+   text-decoration: none;
+   transition: all ease 0.50s;
+}
+
+nav ul a:hover {
+   color: var(--main-color);
+}
+
+nav ul a.active {
+   color: var(--main-color);
+}
+
+.menu-btn {
+   background: linear-gradient(
+      130.08deg,
+      #383528 0%,
+      #191919 100%);
+   border: 1px solid #3b3b3b;
+   padding: 0.5rem 1rem;
+   border-radius: 2rem;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   margin: 0 1rem 0 0;
+}
+
+#menu-icon {
+   font-size: 28px;
+   margin: 0 0 0 10px;
+   z-index: 6;
+}
+
+/***** PROJECTS SECTION *****/
