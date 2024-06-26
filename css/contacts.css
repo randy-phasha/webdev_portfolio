@@ -1,0 +1,112 @@
+:root {
+   --bg-color: #1f1f21;
+   --text-color: #fff;
+   --main-color: #ff681f;
+
+   --big-font: 5rem;
+   --p-font: 1.1rem
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Rubik", sans-serif;
+   background: var(--bg-color);
+   color: var(--text-color);
+   overflow-x: hidden;
+}
+
+/***** NAVIGATION *****/
+nav {
+   display: flex;
+   justify-content: space-between;
+   position: fixed;
+   top: 0;
+   right: 0;
+   width: 100%;
+   z-index: 1000;
+   align-items: center;
+   background: var(--bg-color);
+   transition: all ease .45s;
+   padding: 0 9%;
+}
+
+nav img {
+   width: 65%;
+}
+
+nav ul {
+   list-style: none;
+   display: flex;
+   padding: 1rem;
+}
+
+nav ul li {
+   padding: 1rem;
+}
+
+nav ul a {
+   font-size: var(--p-font);
+   font-weight: 500;
+   color: var(--text-color);
+   text-decoration: none;
+   transition: all ease 0.50s;
+}
+
+nav ul a:hover {
+   color: var(--main-color);
+}
+
+nav ul a.active {
+   color: var(--main-color);
+}
+
+/***** CONTACTS SECTION *****/
+#contacts {
+   margin-top: 8rem;
+}
+
+#contacts h1 {
+   font-size: var(--big-font);
+   text-align: center;
+   padding-bottom: 3.5rem;
+}
+
+#contacts-container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.contact-tile {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 1rem;
+}
+
+.contact-tile i {
+   font-size: 4rem;
+   padding: 1rem;
+   color: var(--main-color);
+}
+
+.contact-tile h3 {
+   padding: 1rem;
+   font-size: 2rem;
+}
+
+.contact-tile p {
+   padding: 1rem;
+   font-size: 1.2rem;
+}
+
+.contact-tile a {
+   text-decoration: none;
+   color: var(--p-font);
+}
