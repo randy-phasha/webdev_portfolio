@@ -1,0 +1,162 @@
+:root {
+   --bg-color: #1f1f21;
+   --text-color: #fff;
+   --main-color: #ff681f;
+
+   --big-font: 5rem;
+   --p-font: 1.1rem
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Rubik", sans-serif;
+   background: var(--bg-color);
+   color: var(--text-color);
+   overflow-x: hidden;
+}
+
+/***** NAVIGATION *****/
+nav {
+   display: flex;
+   justify-content: space-between;
+   position: fixed;
+   top: 0;
+   right: 0;
+   width: 100%;
+   z-index: 1000;
+   align-items: center;
+   background: var(--bg-color);
+   transition: all ease .45s;
+   padding: 0 9%;
+}
+
+nav img {
+   width: 65%;
+}
+
+nav ul {
+   list-style: none;
+   display: flex;
+   padding: 1rem;
+}
+
+nav ul li {
+   padding: 1rem;
+}
+
+nav ul a {
+   font-size: var(--p-font);
+   font-weight: 500;
+   color: var(--text-color);
+   text-decoration: none;
+   transition: all ease 0.50s;
+}
+
+nav ul a:hover {
+   color: var(--main-color);
+}
+
+nav ul a.active {
+   color: var(--main-color);
+}
+
+/***** PROJECTS SECTION *****/
+#projects {
+   color: var(--text-color);
+   margin: 8rem 0 0 0;
+   padding: 0 0 0 0;
+}
+
+#projects h1 {
+   text-align: center;
+   font-size: var(--big-font);
+   padding-bottom: 3rem;
+}
+
+#project-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+#project-tile {
+   margin: 1rem;
+   padding: 1rem;
+   border: 2px solid var(--text-color);
+}
+
+#project-tile img {
+   width: 550px;
+   height: 350px;
+}
+
+#project-technologies {
+   display: flex;
+   padding: 0.5rem 0;
+   font-family:Arial, Helvetica, sans-serif;
+   opacity: 0.65;
+}
+
+#project-technologies p {
+   padding-right: 1rem;
+}
+
+#project-tile a {
+   color: var(--text-color);
+   text-decoration: none;
+}
+
+.project-heading {
+   text-decoration: underline;
+}
+
+.github-link {
+   font-style: italic;
+}
+
+/***** MEDIA QUERIES *****/
+@media (max-width: 600px) {
+   #project-container {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   #project-tile {
+      width: 95%;
+      padding: 0.5rem;
+   }
+
+   #project-tile img {
+      width: 100%;
+      height: auto;
+   }
+
+   #projects h1 {
+      font-size: 2.5rem;
+      padding-bottom: 1rem;
+   }
+
+   nav ul a {
+      font-size: 0.9rem;
+   }
+
+   #project-technologies p {
+      font-size: 0.9rem;
+      padding-right: 0.5rem;
+   }
+
+   .project-heading {
+      font-size: 1.2rem;
+   }
+
+   .github-link {
+      font-size: 0.9rem;
+   }
+}
+
