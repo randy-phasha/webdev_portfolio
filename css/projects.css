@@ -65,24 +65,98 @@ nav ul a.active {
    color: var(--main-color);
 }
 
-.menu-btn {
-   background: linear-gradient(
-      130.08deg,
-      #383528 0%,
-      #191919 100%);
-   border: 1px solid #3b3b3b;
-   padding: 0.5rem 1rem;
-   border-radius: 2rem;
-   display: flex;
-   align-items: center;
-   cursor: pointer;
-   margin: 0 1rem 0 0;
-}
-
-#menu-icon {
-   font-size: 28px;
-   margin: 0 0 0 10px;
-   z-index: 6;
-}
-
 /***** PROJECTS SECTION *****/
+#projects {
+   color: var(--text-color);
+   margin: 8rem 0 0 0;
+   padding: 0 0 0 0;
+}
+
+#projects h1 {
+   text-align: center;
+   font-size: var(--big-font);
+   padding-bottom: 3rem;
+}
+
+#project-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+#project-tile {
+   margin: 1rem;
+   padding: 1rem;
+   border: 2px solid var(--text-color);
+}
+
+#project-tile img {
+   width: 550px;
+   height: 350px;
+}
+
+#project-technologies {
+   display: flex;
+   padding: 0.5rem 0;
+   font-family:Arial, Helvetica, sans-serif;
+   opacity: 0.65;
+}
+
+#project-technologies p {
+   padding-right: 1rem;
+}
+
+#project-tile a {
+   color: var(--text-color);
+   text-decoration: none;
+}
+
+.project-heading {
+   text-decoration: underline;
+}
+
+.github-link {
+   font-style: italic;
+}
+
+/***** MEDIA QUERIES *****/
+@media (max-width: 600px) {
+   #project-container {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   #project-tile {
+      width: 95%;
+      padding: 0.5rem;
+   }
+
+   #project-tile img {
+      width: 100%;
+      height: auto;
+   }
+
+   #projects h1 {
+      font-size: 2.5rem;
+      padding-bottom: 1rem;
+   }
+
+   nav ul a {
+      font-size: 0.9rem;
+   }
+
+   #project-technologies p {
+      font-size: 0.9rem;
+      padding-right: 0.5rem;
+   }
+
+   .project-heading {
+      font-size: 1.2rem;
+   }
+
+   .github-link {
+      font-size: 0.9rem;
+   }
+}
+
